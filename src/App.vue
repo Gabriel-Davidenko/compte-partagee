@@ -1,27 +1,22 @@
 <template>
-  <h1>Application de gestion de compte partagé [[nom a trouver]]</h1>
-  <nav>
-    <router-link to="/creation">Creation de compte</router-link> |
-  </nav>
-<router-view/>
+  <div class="container ">
+    <div class="row">
+      <h1 class="col text-center">All will be one</h1>
+    </div>
+    <ul class="nav justify-content-center ">
+      <li class="nav-item"><router-link class="nav-link" to="/">Comtes</router-link></li>
+      <li class="nav-item"><router-link class="nav-link" to="/help">Aide</router-link></li>
+    </ul>
+    <router-view class="row" />
+  </div>
 </template>
 
 <script>
 export default {
   name: 'App',
-  
+
   components: {
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
